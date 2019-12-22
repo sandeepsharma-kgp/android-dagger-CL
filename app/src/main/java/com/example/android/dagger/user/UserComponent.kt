@@ -6,6 +6,9 @@ import dagger.Subcomponent
 
 // Definition of a Dagger subcomponent
 @Subcomponent
+// Scope annotation that the UserComponent uses
+// Classes annotated with @LoggedUserScope will have a unique instance in this Component
+@LoggedUserScope
 interface UserComponent {
 
     // Factory to create instances of UserComponent
